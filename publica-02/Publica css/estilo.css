@@ -1,0 +1,92 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(imagem/FOTO.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+ul{
+    list-style: none;
+}
+
+img{
+    width: 40px;
+}
+
+input[type="checkbox"]
+{
+    display: none;
+}
+
+nav{
+    background-color: rgba(72, 173, 204, 0.5);
+    width: 350px;
+    height: 100%;
+    left: -350px;
+    position: absolute;
+    transition: all .5s;
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+    transform: translateX(350px);
+}
+
+ul{
+    top: 70px;
+    position: absolute;
+    width: 100%;
+}
+
+a{
+    display: block;
+    padding: 20px 5px;
+    color: white;
+}
+
+a:hover{
+    background-color: rgb(96, 206, 221);
+    color: rgb(90, 162, 221);
+}
+
+label{
+    background-color: white;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+section{
+    background-image: url(imagem/FOTO.png);
+    background-size: 100%;
+}
+footer{
+    background-color: red;
+    display: flex;
+    bottom: 0;
+    position: absolute;
+    padding: 20px 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(yellow,red);
+      } 
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(red,yellow);
+    padding: 20px 20px;
+}
+

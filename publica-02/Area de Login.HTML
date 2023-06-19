@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+            <label>
+                <b>LOGIN:</b>
+                <input type="LOGIN:" id="login" name="login" required/>
+            </label>
+            <label>
+                <b> <for="senha">SENHA:</b>
+                <input type="SENHA:" id="senha" name="SENHA" required/>
+            </label>
+            <label>
+                <input type="checkbox" id="mostrarSenha" onchange="mostrarOcultarSenha()"> Mostrar senha
+            </label>
+            <script>
+                function mostrarOcultarSenha() 
+                {
+                    var senhaInput = document.getElementById("senha");
+                    var mostrarSenhaCheckbox = document.getElementById("mostrarSenha");
+                    if (mostrarSenhaCheckbox.checked) {
+                    senhaInput.type = "text";
+                    } else {
+                    senhaInput.type = "password";
+                    }
+                }
+            </script>
+            <p>
+                <button>LOGIN</button>
+                <input type="reset" value="LIMPAR"/>
+                <a href="Cadastro.html"> Cadastre-se</a>
+            </p>
+            <footer>Desenvolvido por <a href="page.html"> Wesley</a></footer>
